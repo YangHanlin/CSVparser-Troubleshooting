@@ -20,6 +20,7 @@ int main(int argc, char **argv)
 	catch (csv::Error &e)
 	{
 		std::cerr << e.what() << std::endl;
+		throw;
 	}
 	return 0;
 }
