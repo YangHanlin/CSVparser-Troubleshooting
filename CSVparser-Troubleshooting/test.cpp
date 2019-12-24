@@ -3,7 +3,7 @@
 
 int main(int argc, char **argv)
 {
-	try
+	// try
 	{
 		csv::Parser file = csv::Parser("test.csv");
 
@@ -17,10 +17,10 @@ int main(int argc, char **argv)
 
 		std::cout << file.getHeaderElement(2) << std::endl; // display : Model
 	}
-	catch (csv::Error &e)
+	/*catch (csv::Error &e)
 	{
 		std::cerr << e.what() << std::endl;
 		throw;
-	}
+	}*/
 	return 0;
 }
